@@ -23,7 +23,10 @@ fun AppNavigation(navController: NavHostController) {
                 type = NavType.StringType
             })
         ) { backStackEntry ->
-            SecondScreen(data = backStackEntry.arguments?.getString("data"))
+            SecondScreen(
+                navController = navController,
+                data = backStackEntry.arguments?.getString("data")
+            )
         }
     }
 }

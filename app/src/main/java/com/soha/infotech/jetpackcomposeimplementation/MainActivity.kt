@@ -29,6 +29,7 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarColors
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -84,17 +85,25 @@ class MainActivity : ComponentActivity() {
                 }
             }*/
 
-            // Bottom Navigation
+            /**
+             * Bottom Navigation
+             */
             // MainScreen()
 
-            // Navigation (pass data from Screen A to Screen B)
-            /*val navController = rememberNavController()
-            AppNavigation(navController = navController)*/
+            /**
+             * Navigation (pass data from Screen A to Screen B)
+             */
+            val navController = rememberNavController()
+            AppNavigation(navController = navController)
 
             /*val navController = rememberNavController()
             ABNavigation(navController)*/
 
-            RegistrationScreen()
+            /**
+             * Registration screen with Reusable Composable function
+             */
+            //RegistrationScreen()
+
         }
     }
 }

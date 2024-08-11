@@ -27,6 +27,8 @@ import androidx.navigation.NavController
 
 @Composable
 fun FirstScreen(navController: NavController) {
+    // Retrieve data from next screen
+    val msg = navController.currentBackStackEntry?.savedStateHandle?.get<String>("msg")
 
     var text by remember { mutableStateOf("") }
     // error state for edit text
@@ -78,5 +80,13 @@ fun FirstScreen(navController: NavController) {
         ) {
             Text(text = "Send Data", color = Color.White)
         }
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        // set previous screen data
+        msg?.let {
+            Text(text = it)
+        }
+
     }
 }
