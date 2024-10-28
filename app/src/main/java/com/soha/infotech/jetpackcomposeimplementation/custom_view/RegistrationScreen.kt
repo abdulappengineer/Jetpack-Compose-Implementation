@@ -1,5 +1,6 @@
-package com.soha.infotech.jetpackcomposeimplementation.components.custom_view
+package com.soha.infotech.jetpackcomposeimplementation.custom_view
 
+import android.util.Patterns
 import android.widget.Toast
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -91,7 +92,7 @@ fun RegistrationScreen(modifier: Modifier = Modifier) {
                 validateForm()
             },
             label = "Email",
-            isError = !android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches(),
+            isError = !Patterns.EMAIL_ADDRESS.matcher(email).matches(),
             errorMessage = "Invalid email address",
             keyboardType = KeyboardType.Email
         )

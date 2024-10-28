@@ -1,4 +1,4 @@
-package com.soha.infotech.jetpackcomposeimplementation.components.pass_data_screen_first_to_screen_second
+package com.soha.infotech.jetpackcomposeimplementation.pass_data_screen_first_to_screen_second
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

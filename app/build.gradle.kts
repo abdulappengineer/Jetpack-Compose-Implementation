@@ -67,12 +67,13 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-
     // Navigation
     implementation(libs.androidx.navigation.runtime.ktx)
     implementation(libs.androidx.navigation.compose)
 
     // material
-    implementation (libs.androidx.material) 
+    implementation (libs.androidx.material)
 
+    // Material icons
+    implementation(libs.androidx.material.icons.extended)
 }

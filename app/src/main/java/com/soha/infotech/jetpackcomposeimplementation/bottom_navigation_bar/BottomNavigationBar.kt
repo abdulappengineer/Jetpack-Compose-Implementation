@@ -1,4 +1,4 @@
-package com.soha.infotech.jetpackcomposeimplementation.components.bottom_navigation_bar
+package com.soha.infotech.jetpackcomposeimplementation.bottom_navigation_bar
 
 import androidx.compose.foundation.layout.navigationBars
 import androidx.compose.foundation.layout.windowInsetsPadding

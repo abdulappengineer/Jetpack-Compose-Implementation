@@ -233,7 +233,7 @@ fun CustomListView(paddingValues: PaddingValues) {
         modifier = Modifier
             .padding(paddingValues)
             .fillMaxSize()
-            .background(Color.White),
+            .background(Color.White)
     ) {
         items(fruitsList) { item: FruitModel ->
             ListRow(fruitModel = item) {

@@ -1,4 +1,4 @@
-package com.soha.infotech.jetpackcomposeimplementation.components.custom_view
+package com.soha.infotech.jetpackcomposeimplementation.custom_view
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
