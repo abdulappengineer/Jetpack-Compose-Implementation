@@ -36,6 +36,7 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
+import com.soha.infotech.jetpackcomposeimplementation.jcn.EmployeeList
 
 import com.soha.infotech.jetpackcomposeimplementation.product.model.Product
 import com.soha.infotech.jetpackcomposeimplementation.user_list_user_item.DataManager
@@ -155,7 +156,8 @@ class MainActivity : ComponentActivity() {
             /* val navController = rememberNavController()
              AppNavigationDemo(navController)*/
 
-            App()
+          //  App()
+            EmployeeList()
 
         }
 
